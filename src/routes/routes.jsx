@@ -10,6 +10,8 @@ import { createBrowserRouter } from "react-router-dom";
 // import User from "../components/User";
 // import Products from "../components/Products";
 // import ProductDetail from "../components/ProductDetail";
+
+//Lazy loading
 import { lazy } from "react";
 import Layout from "../components/Layout"; // Usually Layout is kept eager to avoid blank screen
 //Lazy load all other page components
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "dashboard",
+    path: "/dashboard",
     element: <Dashboard />,
     children: [
       {
