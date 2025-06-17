@@ -18,7 +18,7 @@ const Layout = () => {
           gap: "20px",
           marginBottom: "20px",
           height: "10vh",
-          backgroundColor: "grey",
+          backgroundColor: "skyblue",
         }}
       >
         <NavLink to="/" className={() => ""}>
