@@ -25,6 +25,7 @@ const Candidates = lazy(() => import("../components/Candidates"));
 const User = lazy(() => import("../components/User"));
 const Products = lazy(() => import("../components/Products"));
 const ProductDetail = lazy(() => import("../components/ProductDetail"));
+const HOC = lazy(() => import("../components/HOC"));
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       },
       { path: "products", element: <Products /> }, // ✅ list
       { path: "products/:id", element: <ProductDetail /> }, // ✅ details
+      {
+        path: "hoc",
+        element: <HOC />,
+      },
     ],
   },
   {

@@ -39,6 +39,9 @@ const Layout = () => {
         <NavLink to="products" className={() => ""}>
           Products
         </NavLink>
+        <NavLink to="hoc" className={() => ""}>
+          Hoc
+        </NavLink>
       </nav>
 
       {/* This renders the matched child route */}
